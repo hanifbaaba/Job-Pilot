@@ -1,6 +1,6 @@
 ## JobPilot
 
-- JobPilot is a job application platform that allows candidates to apply for jobs, companies to Post job opportunities. It provides a clean API backend built with Django & DRF, optimized for performance, scalability, and production deployment.
+- JobPilot is a job application platform that allows candidates to apply for jobs, companies to Createjob opportunities. It provides a clean API backend built with Django & DRF, optimized for performance, scalability, and production deployment.
 
 ## Table of Content
 
@@ -19,17 +19,17 @@
 
 - Job application for job seekers.
 - Job creation for employers.
-- Search with filters based on categories(title, keyword,location,salary etc)
-- Pagination
-- Email Notification
-- Resume upload
-- Secure and scalable architecture
+- Search with filters based on categories(title, keyword,location,salary) etc.
+- Pagination.
+- Email Notification.
+- Resume upload.
+- Secure and scalable architecture.
 
 ## Installation
 
 1. Clone the repository
 
-- git clone https://github.com/hanifbaaba/JobPilot
+- git clone https://github.com/hanifbaaba/Job-Pilot
 - Enter the directory:
 - cd backend
 - Install required dependencies:
