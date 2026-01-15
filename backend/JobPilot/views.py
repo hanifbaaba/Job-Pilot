@@ -43,5 +43,5 @@ class ApplyJobView(viewsets.ModelViewSet):
         message="Thanks for applying.",
         from_email="baabahanif@gmail.com",
         recipient_list=[application.email],
-        fail_silently=False,
+        fail_silently=True,
         )
