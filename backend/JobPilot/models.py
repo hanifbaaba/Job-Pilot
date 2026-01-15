@@ -12,7 +12,7 @@ class CreateJob(models.Model):
       ('mid', 'Mid'),
       ('senior', 'Senior'),
       ]
-      experience = models.CharField(max_length=200, default='experience',blank=True, choices=EXPERIENCE_CHOICES)
+      experience = models.CharField(max_length=200, default='junior',blank=True, choices=EXPERIENCE_CHOICES)
       created_at = models.DateTimeField(auto_now_add=True)
       updated_at = models.DateTimeField(auto_now=True)
       
@@ -20,7 +20,7 @@ class CreateJob(models.Model):
             return self.job_title
       
 class ApplyJob(models.Model):
-      job = models.ForeignKey(CreateJob,on_delete=models.CASCADE,related_name='applications', blank = True, null=True)
+      job = models.ForeignKey(CreateJob,on_delete=models.CASCADE,related_name='applications')
       name = models.CharField(max_length=200)
       email = models.EmailField()
       reason_for_applying = models.TextField()
