@@ -152,45 +152,7 @@ Employer
 
 - Creating a new job.
   GET/create-job this displays list of available jobs.
-  [
-  {
-  "id": 1,
-  "job_title": "Frontend developer",
-  "description": "We are looking for a highly talented frontend developer experienced in React and typescript. Must be familiar with git and aws deployment.",
-  "salary": "96000.00",
-  "company_name": "daea",
-  "location": "Remote",
-  "category": "Frontend development"
-  },
-  {
-  "id": 2,
-  "job_title": "Backend developer",
-  "description": "We are looking for a highly talented Backend developer experienced in Django and PostgreSQL. Must be familiar with git and aws deployment.",
-  "salary": "95000.00",
-  "company_name": "daea",
-  "location": "Remote",
-  "category": "Backend development"
-  },
-  {
-  "id": 3,
-  "job_title": "Data Scientist",
-  "description": "We are hiring a data scientist to join our team . Qualifications must be able to use numpy, matplotlib and 10 years of experience.",
-  "salary": "960000.00",
-  "company_name": "daea",
-  "location": "Remote",
-  "category": "Data Science"
-  }
-  ]
   GET /create-job/<id>/ gets a single job
-  {
-  "id": 2,
-  "job_title": "Backend developer",
-  "description": "We are looking for a highly talented Backend developer experienced in Django and PostgreSQL. Must be familiar with git and aws deployment.",
-  "salary": "95000.00",
-  "company_name": "daea",
-  "location": "Remote",
-  "category": "Backend development"
-  },
   POST/create-job this creates a new job application.
   PUT/create-job<id>/ this updates a job application.
   DELETE/create-job<id>/ this deletes a job application.
@@ -198,13 +160,6 @@ Employer
 - Applying for a job
   GET /apply-job/<id> Returns all job applications.
   POST /apply-job/<id> Submit a new application.
-  {
-  "job": 2,
-  "name": "John Doe",
-  "reason_for_applying": "I have strong experience…",
-  "country_of_residence": "USA",
-  "portfolio_link": "https://portfolio.dev"
-  }
   PUT /apply-job/<id> Updates job application
   DELETE /apply-job/<id> Deletes job application
 
