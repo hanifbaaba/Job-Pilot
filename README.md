@@ -150,37 +150,39 @@ Employer
 
 ## API Endpoints
 
+Backend Domain - https://job-pilot-b3d0.onrender.com/
+
 - Creating a new job.
-  GET/create-job this displays list of available jobs.
-  GET /create-job/<id>/ gets a single job
-  POST/create-job this creates a new job application.
-  PUT/create-job<id>/ this updates a job application.
-  DELETE/create-job<id>/ this deletes a job application.
+  GET https://job-pilot-b3d0.onrender.com/create-job: this displays list of available jobs.
+  GET https://job-pilot-b3d0.onrender.com/create-job/<id>/: gets a single job
+  POST https://job-pilot-b3d0.onrender.com/create-job: this creates a new job application.
+  PUT https://job-pilot-b3d0.onrender.com/create-job<id>/: this updates a job application.
+  DELETE https://job-pilot-b3d0.onrender.com/create-job<id>/: this deletes a job application.
 
 - Applying for a job
-  GET /apply-job/<id> Returns all job applications.
-  POST /apply-job/<id> Submit a new application.
-  PUT /apply-job/<id> Updates job application
-  DELETE /apply-job/<id> Deletes job application
+  GET https://job-pilot-b3d0.onrender.com/apply-job/<id>: Returns all job applications.
+  POST https://job-pilot-b3d0.onrender.com/apply-job/<id>: Submit a new application.
+  PUT https://job-pilot-b3d0.onrender.com/apply-job/<id>: Updates job application
+  DELETE https://job-pilot-b3d0.onrender.com/apply-job/<id>: Deletes job application
 
 - Searching for jobs based on filter
   this endpoint search for jobs based on keywords in the url
   Example
 
-  - /create-job/?search=developer
-  - /create-job/?search=data
-  - /create-job/?search=manager
-  - /create-job/?search=engineer
+  - https://job-pilot-b3d0.onrender.com/create-job/?search=developer
+  - https://job-pilot-b3d0.onrender.com/create-job/?search=data
+  - https://job-pilot-b3d0.onrender.com/create-job/?search=manager
+  - https://job-pilot-b3d0.onrender.com/create-job/?search=engineer
 
 - Salary range based filtering
 
-  - /create-job/?min_salary=200000 User will be able to search the minimum salary posted
-  - /create-job/?max_salary=600000 User will be able to search the maximum salary posted
-  - /create-job/?min_salary=200000&max_salary=600000 User will be able to search for both minimum amount and maximum amount
+  - https://job-pilot-b3d0.onrender.com/create-job/?min_salary=200000 User will be able to search the minimum salary posted
+  - https://job-pilot-b3d0.onrender.com/create-job/?max_salary=600000 User will be able to search the maximum salary posted
+  - https://job-pilot-b3d0.onrender.com/create-job/?min_salary=200000&max_salary=600000 User will be able to search for both minimum amount and maximum amount
 
 - Pagination
   Example
-  GET /apply-job/?page = 4. This will route to page 4 of jobs application page.
+  GET https://job-pilot-b3d0.onrender.com/apply-job/?page = 4. This will route to page 4 of jobs application page.
 
 Response:
 

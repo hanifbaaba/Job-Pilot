@@ -14,7 +14,7 @@ ordering = ['-created_at']
 class CreateJobView(viewsets.ModelViewSet):
     queryset = CreateJob.objects.all()
     serializer_class = CreateJobSerializer
-    permission_classes = [AllowAny]
+    permission_classes = [IsAuthenticated,IsAuthenticatedOrReadOnly]
     search_fields = ['job_title', 'description', 'location', 'category', 'company_name']
     filter_backends = [DjangoFilterBackend, SearchFilter,OrderingFilter]
     filterset_fields = ['salary']
@@ -35,7 +35,7 @@ class CreateJobView(viewsets.ModelViewSet):
 class ApplyJobView(viewsets.ModelViewSet):
     queryset = ApplyJob.objects.all()
     serializer_class = ApplyJobSerializer
-    permission_classes = [AllowAny]
+    permission_classes = [IsAuthenticated,IsAuthenticatedOrReadOnly]
     pagination_class = PageNumberPagination
     
     def perform_create(self, serializer):
