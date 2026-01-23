@@ -156,6 +156,8 @@ Backend Domain - https://job-pilot-b3d0.onrender.com/
   GET https://job-pilot-b3d0.onrender.com/create-job: this displays list of available jobs.
   GET https://job-pilot-b3d0.onrender.com/create-job/<id>/: gets a single job
   POST https://job-pilot-b3d0.onrender.com/create-job: this creates a new job application.
+  This is a screenshot of a job that has been created.
+  ![Job-Created Screenshot] (Job-created.png)
   PUT https://job-pilot-b3d0.onrender.com/create-job<id>/: this updates a job application.
   DELETE https://job-pilot-b3d0.onrender.com/create-job<id>/: this deletes a job application.
 
