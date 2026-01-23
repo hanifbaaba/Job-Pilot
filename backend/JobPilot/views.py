@@ -48,8 +48,5 @@ class ApplyJobView(viewsets.ModelViewSet):
         fail_silently=True,
         )
     
-    # def validate_salary(self, value):
-    #     if value <= 0:
-    #         raise serializers.ValidationError("Salary must be greater than zero.")
-    #     return value
+   
 
